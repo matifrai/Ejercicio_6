@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de prestamo</title>
+</head>
+<body>
+   <h1> Agencia Paquete de Verano a Bariloche </h1> 
+
+        <p>Nombre:</p><br>
+        <input type="text" id="nombreAlumno" placeholder="Ej: Lionel Scaloni"><br>
+        <p id="fb-nombre"></p>
+        <br>
+        <p>Edad</p>
+        <input type="number" id="Edad" min="18" max="65">
+        <p id="fb-dias"></p>
+        <br>
+
+        <p>Presupuesto</p>
+        <input type="number" id="Presupuesto" min="500000"/>
+        <p id="fd-presupuesto"></p>
+        <br>
+
+        <p>Destino Preferido</p>
+        <select id="Destino">
+            <option value="">Selecciona un destino...</option>
+            <option value="Bariloche"></option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Cataratas">Cataratas</option>
+        </select><br>
+        <p id="fb-destino"></p>
+
+        <p>Temporada:</p>
+        <select id="Temporada">
+        <option value="">Seleccioná un estado...</option>
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Ambos ">Suspendido — sanción vigente</option>
+        </select><br>
+        <p id="fb-estado"></p>
+
+        <p>Seguro de Viaje:</p>
+        <input type="checkbox" name="acepto">Acepto
+        <br>
+        <p id = "fb-seguro"></p>
+        
+        <p>Ver Disponibilidad:</p>
+        <button onclick="registrarViaje()">
+            Enviar
+        </button>
