@@ -8,20 +8,16 @@
 <body>
    <h1> Agencia Paquete de Verano a Bariloche </h1> 
 
-        <p>Nombre:</p><br>
-        <input type="text" id="nombreAlumno" placeholder="Ej: Lionel Scaloni"><br>
+        <p>Nombre:</p>
+        <input type="text" id="NombreViajero"><br>
         <p id="fb-nombre"></p>
-        <br>
         <p>Edad</p>
-        <input type="number" id="Edad" min="18" max="65">
+        <input type="number" id="Edad">
         <p id="fb-dias"></p>
-        <br>
 
         <p>Presupuesto</p>
-        <input type="number" id="Presupuesto" min="500000"/>
+        <input type="number" id="Presupuesto"/>
         <p id="fd-presupuesto"></p>
-        <br>
-
         <p>Destino Preferido</p>
         <select id="Destino">
             <option value="">Selecciona un destino...</option>
@@ -38,14 +34,14 @@
         <option value="Febrero">Febrero</option>
         <option value="Ambos ">Suspendido — sanción vigente</option>
         </select><br>
-        <p id="fb-estado"></p>
+        <p id="fb-destino"></p>
 
         <p>Seguro de Viaje:</p>
-        <input type="checkbox" name="acepto">Acepto
-        <br>
+        <input type="checkbox" id="Acepto">Acepto
         <p id = "fb-seguro"></p>
         
         <p>Ver Disponibilidad:</p>
+        <button onclick="limpiarFormulario()"></button>
         <button onclick="registrarViaje()">
             Enviar
         </button>
