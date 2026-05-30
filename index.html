@@ -13,17 +13,18 @@
         <p id="fb-nombre"></p>
         <p>Edad</p>
         <input type="number" id="Edad">
-        <p id="fb-dias"></p>
+        <p id="fb-edad"></p>
 
         <p>Presupuesto</p>
         <input type="number" id="Presupuesto"/>
-        <p id="fd-presupuesto"></p>
+        <p id="fb-presupuesto"></p>
         <p>Destino Preferido</p>
         <select id="Destino">
             <option value="">Selecciona un destino...</option>
-            <option value="Bariloche"></option>
+            <option value="Bariloche">Bariloche</option>
             <option value="Mendoza">Mendoza</option>
             <option value="Cataratas">Cataratas</option>
+            <option value="NoPreferencia">No tengo Preferencia</option>
         </select><br>
         <p id="fb-destino"></p>
 
@@ -32,7 +33,7 @@
         <option value="">Seleccioná un estado...</option>
         <option value="Enero">Enero</option>
         <option value="Febrero">Febrero</option>
-        <option value="Ambos ">Suspendido — sanción vigente</option>
+        <option value="Ambos ">Ambos Meses</option>
         </select><br>
         <p id="fb-destino"></p>
 
@@ -41,7 +42,16 @@
         <p id = "fb-seguro"></p>
         
         <p>Ver Disponibilidad:</p>
-        <button onclick="limpiarFormulario()"></button>
-        <button onclick="registrarViaje()">
-            Enviar
+        <button onclick="limpiarFormulario()">
+            Limpiar
         </button>
+        <button onclick="registrarViaje()">
+            Enviar 
+        </button>
+
+
+        <div id="resultado"></div>
+
+         <script src="script.js"></script>
+</body>
+</html>
